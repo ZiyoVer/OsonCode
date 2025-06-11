@@ -1,0 +1,63 @@
+/* Header section start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 1120px;
+    margin: auto;
+}
+header{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 7px;
+}
+ul li{
+    margin: 0 10px;
+}
+ul li a{
+    color: #000;
+}
+.osonCode a, ul li a, .login a{
+    text-decoration: none;
+}
+.login button{
+    background: linear-gradient(to right, #42eb42, #ad2ead);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: 15px;
+    color: #fff;
+    font-weight: 650;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 3s;
+}
+
+.fa-user, .fa-right-to-bracket{
+    margin-right: 7px;
+}
+.osonCode{
+   font-size: 20px;
+   font-weight: bolder;
+}
+.fa-code{
+    background: linear-gradient(to right, #42eb42, #ad2ead);
+    padding: 7px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.login a{
+    color: #000;
+}
