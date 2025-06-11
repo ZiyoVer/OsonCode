@@ -30,7 +30,7 @@ ul li a{
     text-decoration: none;
 }
 .login button{
-    background: linear-gradient(to right, #42eb42, #ad2ead);
+    background: linear-gradient(135deg, #00ff88 0%, #8000ff 100%);
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
@@ -52,7 +52,7 @@ ul li a{
    font-weight: bolder;
 }
 .fa-code{
-    background: linear-gradient(to right, #42eb42, #ad2ead);
+    background: linear-gradient(135deg, #00ff88 0%, #8000ff 100%);
     padding: 7px;
     border-radius: 10px;
     color: #fff;
