@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    overflow: hidden;
+    min-height: 100vh;
 }
 
 a{
@@ -22,7 +22,6 @@ a{
     padding: 0 30px;
 }
 
-    
 header {
     display: flex;
     justify-content: space-between;
@@ -90,8 +89,6 @@ header ul li a:hover {
     opacity: 0.85;
 }
 
-/* AI section start */
-  
 .ai-section {
     display: flex;
     justify-content: space-between;
@@ -191,17 +188,65 @@ header ul li a:hover {
     background-color: #f0eaff;
 }
 
+.ai-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 420px;
+    min-height: 400px;
+}
 
-.main-part{
+.shape {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.shape-purple {
+    width: 110px;
+    height: 110px;
+    background: radial-gradient(circle at 50% 50%, #be89f7, #9648db 80%);
+    bottom: -35px;
+    left: -35px;
+}
+
+.shape-green {
+    width: 95px;
+    height: 95px;
+    background: radial-gradient(circle at 50% 50%, #72ffd4, #00ce88 90%);
+    top: -35px;
+    right: -35px;
+}
+
+.right-icon {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    background: #01d170;
+    padding: 14px;
+    border-radius: 50%;
+    color: #f9f9f9;
+    font-size: 32px;
+    z-index: 3;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.main-part {
+    position: relative;
+    z-index: 2;
     text-align: center;
     padding: 40px 55px;
-    border-radius: 10px;
-    box-shadow:
-    10px 10px 20px rgba(0, 0, 0, 0.3),
-    -8px 8px 15px rgba(255, 255, 255, 0.5);
-    z-index: 100;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.12), 0 1.5px 4px rgba(160,80,255,0.09);
+    background: #fff;
+    min-width: 320px;
 }
-.main-part i{
+
+.main-part i {
     font-size: 120px;
     padding: 25px;
     margin: -10px 20px 20px 20px;
@@ -269,59 +314,43 @@ header ul li a:hover {
 .colors{
     display: flex;
 }
-.right-icon i{
-    background: #01d170;
-    padding: 15px;
-    border-radius: 50%;
-    color: #f9f9f9;
-    font-size: 30px;
-    position: absolute;
-    right: 10.5%;
-    top: 15%;
-}
-.left-icon{
-    background:rgb(181, 88, 181);
-    padding: 20px;
-    border-radius: 50%;
-    color: transparent;
-    font-size: 20px;
-    position: absolute;
-    
-}
-/* AI working section end */
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .ai-section {
         flex-direction: column;
         text-align: center;
+        gap: 45px;
     }
-
-    .ai-text {
-        max-width: 100%;
+    .ai-image {
+        margin-top: 0;
     }
-
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
     header {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
     }
-
     header ul {
         flex-direction: column;
         gap: 10px;
     }
-
     .login {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .ai-section {
+        gap: 25px;
+    }
+    .main-part {
+        padding: 20px 5px;
+        min-width: 90vw;
+    }
+    .ai-image {
+        width: 98vw;
+        min-height: 280px;
     }
 }
