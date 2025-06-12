@@ -315,6 +315,68 @@ header ul li a:hover {
     display: flex;
 }
 
+/* AI cards section */
+.ai-description{
+    text-align: center;
+    margin-top: 150px;
+}
+.ai-question{
+    background: linear-gradient(135deg, #6df0b3 0%, #ccaeeb 100%);
+    display: inline;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #086138;
+}
+.ai-description h1{
+    margin: 20px 0 15px 0;
+}
+.ai-description p{
+    color: #6b6b6b;
+    font-size: 18px;
+}
+.ai-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.line{
+    width: 30px;
+    height: 2px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #6df0b3 0%, #ccaeeb 100%);
+}
+.card-1{
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 50px 0 30px 0;
+    border-radius: 10px;
+}
+.card-1__icon{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #f0eaff;
+} 
+.fa-brain{
+    background:rgb(181, 88, 181);
+}
+.fa-circle-check{
+    background: #0aa15a;
+}
+.fa-message{
+    background: #1362ca;
+}
+.fa-bolt{
+    background: rgb(235, 187, 32);
+}
+.card-1 p{
+    margin-top: 13px;
+    line-height: 24px;
+}
+.card-1:hover{
+    background: rgb(21, 119, 211);
+}
+
 @media (max-width: 900px) {
     .ai-section {
         flex-direction: column;
