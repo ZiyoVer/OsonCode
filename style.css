@@ -1,142 +1,224 @@
-/* Header section start*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif, Helvetica, Arial;
-}
-.container{
-    max-width: 1120px;
-    margin: auto;
-}
-header{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-}
-ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-ul li{
-    margin: 0 10px;
-}
-ul li a{
-    color: #000;
-    font-size: 18px;
-}
-ul li a:hover{
-    color: rgb(105, 237, 33);
-}
-.osonCode a, ul li a, .login a{
-    text-decoration: none;
-    font-size: 20px;
-}
-.login button{
-    background: linear-gradient(135deg, #00ff88 0%, #8000ff 100%);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 16px;
-    margin-left: 15px;
-    color: #fff;
-    font-weight: 650;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: color 3s;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.fa-user, .fa-right-to-bracket{
-    margin-right: 7px;
-    cursor: pointer;
-}
-.osonCode{
-   font-size: 20px;
-   font-weight: bolder;
-}
-.fa-code{
-    background: linear-gradient(135deg, #00ff88 0%, #8000ff 100%);
-    padding: 7px;
-    border-radius: 10px;
-    color: #fff;
-    cursor: pointer;
-}
-.login a{
-    color: #000;
-}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
-/* Header section end */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-/* AI working section start */
-.ai-section{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-}
-.ai{
-    text-decoration: none;
-    background: linear-gradient(135deg, #84dab2 0%, #9d76c4 100%);
-    color: rgb(97, 154, 66);
-    padding: 5px 25px;
-    border-radius: 18px;
-    font-size: 20px;
-    margin-bottom: 70px;
-    font-weight: 650;
-}
-.ai-text h1{
-    margin: 25px 0;
-    font-size: 55px;
-}
-.ai-text h1 span{
-    background: linear-gradient(135deg, #84dab2 0%, #9d76c4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-.ai-paragraph{
-    font-size: 18px;
-    margin-bottom: 30px;
-    line-height: 27px;
-    color: rgb(114, 112, 112);
-}
-.statistic-text{
-    display: flex;
-}
-.numbers span{
-    font-size: 30px;
-    margin-right: 20px;
-    font-weight: bold;
-}
-.numbers{
-    margin-bottom: 7px;
-}
-.statistic-text p{
-    margin: 0 25px 5px 10px;
-    color: rgb(114, 112, 112);
-    margin-bottom: 20px;
-}
-.ai-btn{
-    padding: 10px 25px;
-    border: none;
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    background: linear-gradient(135deg, #00ff88 0%, #8000ff 100%);
-    color: #fff;
-}
-.fa-arrow-right{
-    margin-left: 5px;
-}
-.demo-btn{
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: transparent;
-    border: solid 1px rgb(114, 112, 112);
-    cursor: pointer;
-    font-weight: 650;
-}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .osonCode {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #00FF88, #8000FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .osonCode i {
+      margin-right: 10px;
+      color: #00FF88;
+    }
+
+    header ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    header ul li a {
+      font-weight: 500;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    header ul li a:hover {
+      color: #8000FF;
+    }
+
+    .login {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .login a {
+      font-weight: 500;
+      color: #333;
+    }
+
+    .login button {
+      background: linear-gradient(135deg, #00FF88, #8000FF);
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: opacity 0.3s ease;
+    }
+
+    .login button:hover {
+      opacity: 0.85;
+    }
+
+  
+    .ai-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 60px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .ai-text {
+      max-width: 600px;
+    }
+
+    .ai {
+      display: inline-block;
+      padding: 6px 12px;
+      background: linear-gradient(135deg, #00FF88, #8000FF);
+      color: white;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .ai-text h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .ai-text h1 span {
+      background: linear-gradient(135deg, #00FF88, #8000FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .ai-paragraph {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .statistics {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+
+    .numbers span {
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .statistic-text p {
+      margin-bottom: 10px;
+    }
+
+    .btns {
+      display: flex;
+      gap: 20px;
+    }
+
+    .ai-btn {
+      background: linear-gradient(135deg, #00FF88, #8000FF);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    .ai-btn i {
+      margin-left: 8px;
+    }
+
+    .ai-btn:hover {
+      opacity: 0.85;
+    }
+
+    .demo-btn {
+      background-color: transparent;
+      border: 2px solid #8000FF;
+      color: #8000FF;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .demo-btn i {
+      margin-right: 6px;
+    }
+
+    .demo-btn:hover {
+      background-color: #f0eaff;
+    }
+
+    .ai-image i {
+      font-size: 200px;
+      background: linear-gradient(135deg, #00FF88, #8000FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-width: 768px) {
+      .ai-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .ai-text {
+        max-width: 100%;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      header ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .login {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
