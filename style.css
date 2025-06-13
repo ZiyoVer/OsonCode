@@ -490,6 +490,207 @@ hr{
 }
 /* Statistics section end */
 
+/* Course section start */
+.course-card-section{
+    margin: 50px 0;
+}
+.course-card-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.course-card-title h3{
+    font-size: 40px;
+}
+.course-card-title p{
+    color: #4a4646;
+    font-size: 20px;
+}
+.course-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.course-card{
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 12px;
+    transition: transform 0.3s, translate 0.3s;
+    will-change: transition;
+    transform: translateY(0);
+    max-width: 360px;
+}
+.course-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px 0 rgba(70, 52, 135, 0.09);
+}
+.course-card:hover .course-python{
+    color: #058f4f;
+}
+.course-card:hover .python{
+    background-color: #bafee1;
+}
+.course-card:hover .course-js{
+    color: rgb(241, 238, 94);
+}
+.course-card:hover .globe{
+    background: rgb(254, 252, 158);
+}
+.course-card:hover .course-react{
+    color: #76d0eb;
+}
+.course-card:hover .react{
+    background: #a3e0f3;
+}
+
+.course-card:hover .course-sql{
+    color: rgb(237, 137, 244);
+}
+.course-card:hover .course-ml{
+    color: rgb(245, 105, 145);
+}
+.course-card:hover .course-mobile{
+   color: #7ad6f2;
+}
+.course-card:hover .sql{
+    background: rgb(230, 159, 236);
+}
+.course-card:hover .ml{
+    background: rgb(255, 173, 196);
+}
+.course-card:hover .mobile{
+    background: #a8ebff;
+}
+.course-card:hover .fa-arrow-right{
+    transform: translateX(5px);
+}
+.course-header{
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 60px;  
+    padding: 25px;
+}
+.fa-python{
+    background: linear-gradient(to bottom, #306998 0%, #306998 50%, #FFD43B 50%, #FFD43B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.python{
+    background: #cdfee9;
+}
+.ml{
+    background: rgb(255, 219, 229);
+}
+.globe{
+    background: rgb(255, 254, 205);
+    color: #0eb6ea;
+}
+
+.react{
+    background: #c9edf8;
+}
+.fa-react{
+    background: rgb(198, 4, 198);
+    color: #ffff;
+    padding: 7px;
+    border-radius: 10px;
+}
+.sql{
+    background: rgb(250, 224, 252);
+}
+.mobile{
+    background: #c9edf8;
+}
+.course-title{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+.course-title span{
+    background: #70ffbc;
+    padding: 0 10px;
+    border-radius: 15px;
+    color: #026537;
+}
+.course-desc{
+    padding: 0 30px;
+    margin: 15px 0;
+    color: #373636;
+}
+.course-statistics{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    color: #373636;
+}
+.fa-clock, .fa-users{
+    color: #373636;
+}
+.fa-star{
+    color: rgb(252, 252, 43);
+}
+.course-btn{
+    text-align: center;
+    margin: 20px 0;
+}
+.course-btn button{
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: padding 0.3s, font-size 0.3s;
+}
+.course-btn button:hover{
+    padding: 13px 105px;
+    font-size: 22px;
+}
+.btn-1{
+    background: #0aa15a;
+}
+.btn-2{
+    background: rgb(235, 187, 32);
+}
+.btn-3{
+    background: #1362ca;
+}
+.btn-4{
+    background: rgb(221, 82, 231);
+    margin-top: 23px;
+}
+.btn-5{
+    background: rgb(239, 132, 162);
+}
+.btn-6{
+    background: #6a5bed;
+    margin-top: 23px;
+}
+.course-btn i{
+    font-size: 14px;
+    transition: transform 0.3s;
+    transform: translateX(0);
+}
+.all-course{
+    text-align: center;
+    margin: 100px 0;
+}
+.all-course button{
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00FF88, #8000FF);
+    color: #ffffff;
+    transition: padding 0.3s, font-size 0.3s;
+}
+.all-course button:hover{
+    padding: 13px 50px;
+    font-size: 22px;
+}
+/* Course section end*/
+
 .features-list {
   display: flex;
   gap: 32px;
