@@ -258,7 +258,6 @@ header ul li a:hover {
     color: #f9f9f9;
 }
 .text-part{
-   /* background: linear-gradient(135deg, #00FF88 0%, #8000FF 100%); */
    border: 1px solid rgb(0, 191, 0);
    background-color: #d9f3ea;
    padding: 10px 25px;
@@ -342,19 +341,38 @@ header ul li a:hover {
 }
 .ai-cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 10;
+    gap: 20px;
 }
 .line{
     width: 30px;
     height: 2px;
     margin-top: 10px;
     background: linear-gradient(135deg, #6df0b3 0%, #ccaeeb 100%);
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease;
 }
-.card-1{
+.card{
     display: inline-block;
     padding: 20px 30px;
     margin: 50px 0 30px 0;
     border-radius: 10px;
+    border: 2px solid rgb(241, 241, 241);
+    transition: all 0.3s ease;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card:hover .line{
+    opacity: 1;
+    display: block;
 }
 .card-1__icon{
     padding: 10px;
@@ -375,13 +393,36 @@ header ul li a:hover {
 .fa-bolt{
     background: rgb(235, 187, 32);
 }
-.card-1 p{
+.card p{
     margin-top: 13px;
     line-height: 24px;
 }
 .card-1:hover{
-    background: rgb(21, 119, 211);
+    background:rgb(239, 216, 240);
+    transform: translateY(-10px);
 }
+.card-2:hover{
+    background: #cdfee9;
+    transform: translateY(-10px);
+}
+.card-3:hover{
+    background: #c9edf8;
+    transform: translateY(-10px);
+}
+.card-4:hover{
+    background: rgb(255, 254, 205);
+    transform: translateY(-10px);
+}
+
+hr{
+    margin-bottom: 30px;
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+    border: none;
+    margin: 0 auto 50px auto;
+}
+/* AI cards section end */
 
 .features-list {
   display: flex;
