@@ -110,8 +110,12 @@ header ul li a:hover {
     border-radius: 20px;
     margin-bottom: 20px;
     text-align: center;
-    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 2px 16px 0 rgba(100, 227, 198, 0.11); /* Pastel soya */
+    transition: background 0.3s, transform 0.2s;
 }
+
 
 .ai-text h1 {
     font-size: 42px;
