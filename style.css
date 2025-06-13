@@ -104,17 +104,18 @@ header ul li a:hover {
 
 .ai {
     display: inline-block;
-    padding: 6px 12px;
-    background: linear-gradient(135deg, #bfffe1, #e6cdff);
+    padding: 8px 20px;
+    border-radius: 22px;
     color: rgb(0, 109, 7);
-    border-radius: 20px;
-    margin-bottom: 20px;
-    text-align: center;
     font-weight: 600;
     font-size: 18px;
-    box-shadow: 0 2px 16px 0 rgba(100, 227, 198, 0.11); /* Pastel soya */
-    transition: background 0.3s, transform 0.2s;
+    background: linear-gradient(120deg, #bfffe1, #6df0b3, #cd9dfe, #bfffe1);
+    transition: background 0.3s, transform 0.25s, box-shadow 0.25s;
+    box-shadow: 0 2px 14px 0 rgba(128,0,255,0.07), 0 1px 14px 0 rgba(0,255,136,0.06);
+    margin-bottom: 50px;
 }
+
+
 
 
 .ai-text h1 {
