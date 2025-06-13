@@ -411,7 +411,6 @@ header ul li a:hover {
     top: 0;
     transform: translateY(0);
     will-change: transform;
-    margin: 0;
 }
 .card:hover{
     transform: translateY(-10px);
@@ -470,6 +469,26 @@ hr{
     margin: 0 auto 50px auto;
 }
 /* AI cards section end */
+
+/* Statistics section start */
+.statistika{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.statistic-1 h2{
+    font-size: 40px;
+    color: #6852a8;
+}
+.first-child, .last-child{
+    margin-left: 35px;
+}
+
+.statistic-1 p{
+    color: #333;
+    font-size: 20px;
+}
+/* Statistics section end */
 
 .features-list {
   display: flex;
