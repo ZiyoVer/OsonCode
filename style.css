@@ -115,6 +115,42 @@ header ul li a:hover {
     margin-bottom: 50px;
 }
 
+.ai-title {
+    font-size: 70px;
+    font-weight: 800;
+    color: #111722;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+#typing-gradient {
+    font-weight: 800;
+    background: linear-gradient(120deg, #16db7c 20%, #1ab1df 55%, #a064f9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+#typing-gradient::after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 1.05em;
+    background: #a064f9;
+    margin-left: 3px;
+    vertical-align: -7%;
+    animation: blink 1s steps(1) infinite;
+    border-radius: 2px;
+    box-shadow: 0 0 8px 0 #a064f9cc;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
 
 
 

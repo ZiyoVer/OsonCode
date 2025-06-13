@@ -39,3 +39,37 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     animateBadge();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const text = "oson";
+    const el = document.getElementById("typing-gradient");
+    const typeSpeed = 180;     // Harfni yozish tezligi (ms)
+    const eraseSpeed = 100;    // Harfni o'chirish tezligi (ms)
+    const waitAfterTyping = 1200;   // So'zni to'liq yozgandan keyin pauza (ms)
+    const waitAfterErasing = 500;   // To'liq o'chirgandan keyin pauza (ms)
+    let idx = 0;
+    let typing = true;
+
+    function typeLoop() {
+        if (typing) {
+            if (idx <= text.length) {
+                el.textContent = text.slice(0, idx);
+                idx++;
+                setTimeout(typeLoop, typeSpeed);
+            } else {
+                typing = false;
+                setTimeout(typeLoop, waitAfterTyping);
+            }
+        } else {
+            if (idx > 0) {
+                el.textContent = text.slice(0, idx - 1);
+                idx--;
+                setTimeout(typeLoop, eraseSpeed);
+            } else {
+                typing = true;
+                setTimeout(typeLoop, waitAfterErasing);
+            }
+        }
+    }
+    typeLoop();
+});
