@@ -17,7 +17,7 @@ a{
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -267,6 +267,7 @@ header ul li a:hover {
 .text-part p{
     color: #333;
 }
+
 .code-part{
     border: 2px solid black;
     margin-top: 10px;
@@ -342,7 +343,7 @@ header ul li a:hover {
 .ai-cards{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     position: relative;
     z-index: 10;
     gap: 20px;
