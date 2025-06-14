@@ -517,6 +517,7 @@ hr{
     will-change: transition;
     transform: translateY(0);
     max-width: 360px;
+    min-height: 400px;
 }
 .course-card:hover{
     transform: translateY(-10px);
