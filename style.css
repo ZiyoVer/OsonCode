@@ -460,7 +460,7 @@ header ul li a:hover {
     transform: translateY(-10px);
 }
 
-hr{
+.first-hr{
     margin-bottom: 30px;
     width: 100%;
     height: 2px;
@@ -692,6 +692,152 @@ hr{
 }
 /* Course section end*/
 
+
+/* Oson code statistics section start */
+.osonCode-stat{
+    background-color: #142842;
+    padding: 30px;
+}
+.statistics-header{
+    text-align: center;
+}
+.statistics-header h5{
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color:rgb(40, 61, 91);
+}
+.fa-chart-line{
+    margin-right: 8px;
+    color: #fff;
+}
+.statistics-header h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.statistics-header p{
+    font-size: 18px;
+    color: #9b9999;
+}
+.statistics-body{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.statistics-card{
+    transition: transform 0.3s, translate 0.3s;
+    transform: translateY(0);
+    border: 2px solid #5e5f62;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 14px;
+    background-color:rgb(49, 63, 83);
+    max-height: 283px;
+}
+.statistics-card:hover{
+    transform: translateY(-10px);
+    background-color:rgb(68, 81, 99);
+}
+.statistics-card:hover > i{
+    width: 70px;
+    height: 63px;
+}
+.statistics-card:hover .line-2{
+    opacity: 1;
+    display: block;
+    transform: translateY(2px);
+}
+.statistics-card i{
+    transition: width 0.5s, height 0.5s;
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    max-width: 64px;
+}
+.statistic-user{
+    background: #2563eb;
+}
+.statistic-code{
+    background: #02ca59;
+}
+.statistic-book{
+    background: rgb(219, 0, 219);
+}
+.statistic-trophy{
+    background: rgb(235, 187, 32);
+}
+.statistics-number{
+    font-size: 35px;
+    background: linear-gradient(120deg, #16db7c 20%, #1ab1df 55%, #a064f9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+.statistics-card h4{
+    font-size: 20px;
+    margin: 7px 0;
+    color: #ffffff;
+}
+.statistics-card p{
+    color: #9b9999;
+}
+.line-2{
+    width: 30px;
+    height: 2px;
+    margin: 20px 0 0 75px;
+    background: linear-gradient(135deg, #6df0b3 0%, #ccaeeb 100%);
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease transform 0.3s, translate 0.3s;
+    transform: translateY(0);
+}
+.second-hr{
+    margin: 50px 0;
+    width: 100%;
+    height: 0.1px;
+    background: #ccc;
+}
+.statistic-footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 60px 50px 0;
+}
+.footer-card h3{
+    font-size: 30px;
+    color: #ffffff;
+}
+.footer-card i{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    padding: 20px;
+}
+.bolt{
+    background: #02ca59;
+}
+.trophy{
+    background: rgb(219, 0, 219);
+}
+.user{
+    background: #2563eb;
+}
+.book-open{
+    background: rgb(235, 187, 32);
+}
+.footer-card p{
+    color: #9b9999;
+}
+
+/* Oson code statistics section end */
 .features-list {
   display: flex;
   gap: 32px;
