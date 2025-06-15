@@ -428,36 +428,37 @@ header ul li a:hover {
     margin-bottom: 10px;
     color: #f0eaff;
 } 
-.fa-brain{
-    background:rgb(181, 88, 181);
+.fa-braain{
+    width: 90px;
 }
 .fa-circle-check{
-    background: #0aa15a;
+    width: 90px;
 }
 .fa-message{
-    background: #1362ca;
+    width: 90px;
+    min-height: 60px;
 }
-.fa-bolt{
-    background: rgb(235, 187, 32);
+.fa-boolt{
+    width: 90px;
 }
 .card p{
     margin-top: 13px;
     line-height: 24px;
 }
 .card-1:hover{
-    background:rgb(239, 216, 240);
+    background:rgb(250, 235, 250);
     transform: translateY(-10px);
 }
 .card-2:hover{
-    background: #cdfee9;
+    background: #e4fff4;
     transform: translateY(-10px);
 }
 .card-3:hover{
-    background: #c9edf8;
+    background: #dff8ff;
     transform: translateY(-10px);
 }
 .card-4:hover{
-    background: rgb(255, 254, 205);
+    background: rgb(255, 255, 239);
     transform: translateY(-10px);
 }
 
