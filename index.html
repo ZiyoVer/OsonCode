@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dizayn.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
 </head>
 <body>
     <!-- Header section start -->
@@ -104,7 +106,7 @@
         <h1>AI bilan dasturlashni o'rganish</h1>
         <p>Zamonaviy texnologiyalar yordamida dasturlashni tex va samarali <br> o'rganing</p>
     </div>
-    <div class="ai-cards">
+    <div class="ai-cards" data-aos="fade-up">
         <div class="card card-1">
             <i class="fa-solid fa-brain card-1__icon"></i>
             <h3>Interaktiv AI <br> o'qituvchi</h3>
@@ -167,7 +169,7 @@
             <h3>Mashhur kurslar</h3>
             <p>AI yordamchi bilan dasturlashning turli yo'nalishlarini o'rganing</p>
         </div>
-        <div class="course-cards">
+        <div class="course-cards" data-aos="fade-up" data-aos-delay="150">
 
             <div class="course-card">
                 <div class="course-header python">
@@ -315,7 +317,7 @@
         <h1>OsonCode statistikasi</h1>
         <p>Minglab o'quvchilar bizning platformamizda muvaffaqiyatli <br> o'rganmmoqda</p>
     </div>
-    <div class="statistics-body">
+    <div class="statistics-body" data-aos="fade-up" data-aos-delay="150">
 
         <div class="statistics-card">
             <i class="fa-regular fa-user statistic-user"></i>
@@ -381,6 +383,13 @@
 <!-- Oson code statistics section end -->
 <!--Bosh qismda qolib ketgan joylar-->
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 700,
+    easing: 'ease-in-out'
+  });
+</script>
 </body>
 </html>

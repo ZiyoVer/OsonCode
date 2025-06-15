@@ -9,6 +9,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
     min-height: 100vh;
+    
 }
 
 a{
@@ -728,29 +729,39 @@ header ul li a:hover {
     justify-content: space-around;
     margin-top: 50px;
 }
-.statistics-card{
-    transition: transform 0.3s, translate 0.3s;
-    transform: translateY(0);
+.statistics-card {
+    position: relative;
+    transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+    background: #34465a;
+    border-radius: 18px;
     border: 2px solid #5e5f62;
-    margin-bottom: 30px;
     text-align: center;
     padding: 40px 20px;
-    border-radius: 14px;
-    background-color:rgb(49, 63, 83);
-    max-height: 283px;
+    margin-bottom: 30px;
+    color: #fff;
+    min-height: 300px; /* Karta balandligi har doim bir xil */
 }
 .statistics-card:hover{
-    transform: translateY(-10px);
-    background-color:rgb(68, 81, 99);
+    background: #26344a;
+    box-shadow: 0 16px 40px 0 rgba(160,100,249,0.12), 0 4px 18px 0 rgba(0,255,136,0.10);
+    transform: translateY(-8px) scale(1.025);
 }
 .statistics-card:hover > i{
     width: 70px;
     height: 63px;
 }
-.statistics-card:hover .line-2{
-    opacity: 1;
+.line-2 {
+    width: 30px;
+    height: 2px;
+    margin: 20px auto 0 auto;
+    background: linear-gradient(135deg, #6df0b3 0%, #ccaeeb 100%);
+    opacity: 0;
+    transition: opacity 0.3s;
     display: block;
-    transform: translateY(2px);
+}
+.statistics-card:hover .line-2 {
+    opacity: 1;
 }
 .statistics-card i{
     transition: width 0.5s, height 0.5s;
@@ -983,3 +994,26 @@ header ul li a:hover {
   .ai-text h1 { font-size: 20px; }
   .ai-paragraph { font-size: 13px; }
 }
+
+
+/*Yangi animatsiyalar*/
+.ai-btn, .demo-btn, .all-course button {
+  position: relative;
+  overflow: hidden;
+}
+.ai-btn::after, .demo-btn::after, .all-course button::after {
+  content: "";
+  position: absolute;
+  left: -75%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.24) 0%, rgba(255,255,255,0.01) 100%);
+  transform: skewX(-25deg);
+  transition: left 0.7s cubic-bezier(.45,1.2,.37,1);
+  z-index: 1;
+}
+.ai-btn:hover::after, .demo-btn:hover::after, .all-course button:hover::after {
+  left: 125%;
+}
+ 

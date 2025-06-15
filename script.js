@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const green = document.querySelector('.shape-green');
     let t = 0;
     function animateBubbles() {
-        t += 0.02;
+        t += 0.05;
         purple.style.transform = `translateY(${Math.sin(t) * 16}px)`;
         green.style.transform = `translateY(${Math.cos(t) * 16}px)`;
         requestAnimationFrame(animateBubbles);
@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     const text = "oson";
     const el = document.getElementById("typing-gradient");
-    const typeSpeed = 180;     // Harfni yozish tezligi (ms)
-    const eraseSpeed = 100;    // Harfni o'chirish tezligi (ms)
-    const waitAfterTyping = 1200;   // So'zni to'liq yozgandan keyin pauza (ms)
-    const waitAfterErasing = 500;   // To'liq o'chirgandan keyin pauza (ms)
+    const typeSpeed = 180;     
+    const eraseSpeed = 100;   
+    const waitAfterTyping = 1200;  
+    const waitAfterErasing = 500;  
     let idx = 0;
     let typing = true;
 
@@ -73,3 +73,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     typeLoop();
 });
+
+
